@@ -9,6 +9,7 @@ class News with ChangeNotifier {
 
   List<Articles> get newsArticles => _newsArticles;
 
+  //news fetch from remote
   Future<void> getNews() async {
     String url =
         "http://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=aa67d8d98c8e4ad1b4f16dbd5f3be348";
